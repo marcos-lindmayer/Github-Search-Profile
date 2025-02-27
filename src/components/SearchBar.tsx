@@ -1,13 +1,15 @@
 import { useCallback, useRef } from "react";
 import { Link, useLocation, useMatch } from "react-router-dom";
-import StarIcon from "./StarIcon";
-import ArrowIcon from "./ArrowIcon";
-import SearchIcon from "./SearchIcon";
+import StarIcon from "../icons/StarIcon";
+import ArrowIcon from "../icons/ArrowIcon";
+import SearchIcon from "../icons/SearchIcon";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
   setIsLoading: (loading: boolean) => void;
   setError: (error: string | null) => void;
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {

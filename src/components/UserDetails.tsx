@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import StarIcon from "./StarIcon";
-import { GitHubUser } from "./types";
+import StarIcon from "../icons/StarIcon";
+import { GitHubUser } from "../types";
 
 interface UserDetailsProps {
   favoriteUsers: GitHubUser[];

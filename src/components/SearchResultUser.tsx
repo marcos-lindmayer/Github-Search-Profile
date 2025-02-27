@@ -1,5 +1,5 @@
-import { GitHubUser } from "./types";
-import StarIcon from "./StarIcon";
+import { GitHubUser } from "../types";
+import StarIcon from "../icons/StarIcon";
 import { Link } from "react-router-dom";
 
 interface SearchResultUserProps {
