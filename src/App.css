@@ -144,7 +144,7 @@ body {
   border-radius: 50%;
 }
 
-.no-results {
+.info-text {
   padding: var(--container-padding);
   font-size: 14px;
 }
