@@ -6,8 +6,6 @@ import SearchIcon from "../icons/SearchIcon";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
-  setIsLoading: (loading: boolean) => void;
-  setError: (error: string | null) => void;
   searchTerm: string;
   setSearchTerm: (term: string) => void;
 }

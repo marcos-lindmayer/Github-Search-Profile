@@ -19,8 +19,6 @@ const App: React.FC = () => {
     setPage,
     setSearchTerm,
     searchUsers,
-    setIsLoading,
-    setError,
   } = useGithubSearch();
 
   const { favoriteUsers, toggleFavorite } = useFavorites();
@@ -61,8 +59,6 @@ const App: React.FC = () => {
       <header className="App-header">
         <SearchBar
           onSearch={handleSearch}
-          setIsLoading={setIsLoading}
-          setError={setError}
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
         />
